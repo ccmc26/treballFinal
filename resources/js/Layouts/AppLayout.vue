@@ -7,7 +7,7 @@ import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
-import ListadoIdiomas from '@/Pages/ListadoIdiomas.vue';
+// import ListadoIdiomas from '@/Pages/ListadoIdiomas.vue';
 
 defineProps({
     title: String,
@@ -52,13 +52,13 @@ const logout = () => {
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
                                 </NavLink>
-                                <NavLink :href="route('language.index')" :active="route().current('language.index')">
+                                <!-- <NavLink :href="route('language.index')" :active="route().current('language.index')">
                                     Listado lenguas
-                                </NavLink>
+                                </NavLink> -->
                                 <!-- otra vista a configurar-->
-                                <NavLink :href="route('uslang.create')" :active="route().current('uslang.create')">
+                                <!-- <NavLink :href="route('uslang.create')" :active="route().current('uslang.create')">
                                     Inscripcion
-                                </NavLink>
+                                </NavLink> -->
                             </div>
                         </div>
 
