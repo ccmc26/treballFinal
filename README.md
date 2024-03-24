@@ -7,6 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## TREBALLFINAL
 
-Readme treball final
+Gancho y Ovillo es una aplicación web de comercio de productos artesanales electrónico, comprometida con proporcionar la mayor variedad y calidad de productos artesanales. Está escrita en PHP, localizada en diferentes paises.
+
+Este repositorio contiene su código, el qual esta puesto con la intencion de desarollo y prevista.
+
+## SOBRE RAMA DE DEVELOP
+La rama develop de este repositorio contiene el trabajo en proceso para la siguiente "version".
