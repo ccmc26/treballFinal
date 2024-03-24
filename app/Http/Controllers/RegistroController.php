@@ -30,7 +30,7 @@ class RegistroController extends Controller
             'name' => 'required',
             'email' => ['required', 'unique:users', 'email', 'bail'],
             'password' => 'required',
-            'avatar' => 'nullable'
+            // 'avatar' => 'nullable'
         ]);
         $user = User::create($validated);
 
