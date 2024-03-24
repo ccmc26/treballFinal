@@ -14,21 +14,21 @@ Gancho y Ovillo es una aplicación web de comercio de productos artesanales comp
 Este repositorio contiene su código, se encuentra en Github con la intencion de desarollo y prevista.
 
 ## REQUISITOS
-
-
-<!-- ## SOBRE RAMA DE DEVELOP
-La rama develop de este repositorio contiene el trabajo en proceso para la siguiente "version". -->
-
+Navegador web, conexión estable a internet, credenciales de usuario, permisos, conocimientos básicos 
 
 ## INSTALACIÓN 
 Para poder tener el entorno de desarollo ejecutandose has de:  
-  1.-Clona el repositorio  
-  2.-Navega al directorio del proyecto  
-  3.-Instala las dependenias del proyecto   
-  4.-Copia el archivo .env.example a un nuevo archivo .env  
-  5.-Configura la base de datos en el archivo .env  
-  6.-Ejecuta las migraciones y los seeders  
-  7.-Inicia el servidor de desarollo de laravel  
+1.-Clona el repositorio  
+2.-Navega al directorio del proyecto  
+3.-Instala las dependenias del proyecto   
+4.-Copia el archivo .env.example a un nuevo archivo .env  
+5.-Configura la base de datos en el archivo .env  
+6.-Ejecuta las migraciones y los seeders  
+7.-Inicia el servidor de desarollo de laravel  
 
-## USO
+## FUNCIONAMIENTO
+
+## DOCUMENTACIÓN
+
+
 
