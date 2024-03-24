@@ -16,7 +16,7 @@ defineProps({
             </h2> -->
 
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Welcome {{ $page.props.auth.user.name }}
+                ¡Bienvenido {{ $page.props.auth.user.name }}!
             </h2>
 
         </template>

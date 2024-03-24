@@ -43,18 +43,19 @@ const logout = () => {
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
                                 <Link :href="route('dashboard')">
-                                    <ApplicationMark class="block h-9 w-auto" />
+                                    <!-- <ApplicationMark class="block h-9 w-auto" /> -->
                                 </Link>
                             </div>
 
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                                    Dashboard
+                                    Sobre nosotros
                                 </NavLink>
-                                <!-- <NavLink :href="route('language.index')" :active="route().current('language.index')">
-                                    Listado lenguas
-                                </NavLink> -->
+
+                                <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                                    Productos
+                                </NavLink>
                                 <!-- otra vista a configurar-->
                                 <!-- <NavLink :href="route('uslang.create')" :active="route().current('uslang.create')">
                                     Inscripcion

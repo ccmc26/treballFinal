@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\LanguageViewController;
 use App\Http\Controllers\User_LanguageViewController;
-
+use App\Models\Articulo;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -37,10 +37,11 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::get('/articulos', function(){
+    return Inertia::render('ListadoArticulos', ['articulos' => Articulo::get()]);
+});
 
-// Route::get('/users', function(){
-//     return Inertia::render('ListadoUsers', ['users' => User::get()]);
-// });
+
 
 // Route::middleware(['auth'])->group(function () {
 //     Route::resource('/language', LanguageViewController::class);
