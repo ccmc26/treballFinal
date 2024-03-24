@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->unsignedBigInteger('stock');
-            $table->boolean('discount');
+            $table->tinyInteger('discount');
             $table->string('photo');
             $table->timestamps();
         });

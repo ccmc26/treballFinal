@@ -21,13 +21,24 @@ class ArticuloController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Request $request)
     {
-        $articulo = Articulo::create(request()->all());
+        // $articulo = Articulo::create(request()->all());
+
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'stock' => 'required|integer|min:0',
+            'discount' => 'required|integer|min:0|max:1',
+            'photo' => 'required|url',
+        ]);
+
+        $articulo = Articulo::create($validatedData);
+
         return response()->json([
             'message' => "creado correctamente",
             'articulo' => $articulo
         ]);
+
     }
 
     /**
