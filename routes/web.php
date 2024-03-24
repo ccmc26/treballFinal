@@ -42,11 +42,11 @@ Route::middleware([
 //     return Inertia::render('ListadoUsers', ['users' => User::get()]);
 // });
 
-Route::middleware(['auth'])->group(function () {
-    Route::resource('/language', LanguageViewController::class);
-});
+// Route::middleware(['auth'])->group(function () {
+//     Route::resource('/language', LanguageViewController::class);
+// });
 
-Route::middleware(['auth'])->group(function () {
-    Route::resource('/uslang', User_LanguageViewController::class);
-});
+// Route::middleware(['auth'])->group(function () {
+//     Route::resource('/uslang', User_LanguageViewController::class);
+// });
 

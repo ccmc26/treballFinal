@@ -23,5 +23,8 @@ Route::delete('/users/{id}', [RegistroController::class, 'destroy']);
 Route::get('/articulos', [ArticuloController::class, 'index']);
 Route::get('/articulos/create', [ArticuloController::class, 'create']);
 Route::post('/articulos', [ArticuloController::class, 'store']);
-
+Route::get('/articulos/{id}', [ArticuloController::class, 'show']);
+Route::get('/articulos/{id}/edit', [ArticuloController::class, 'edit']);
+Route::put('/articulos/{id}', [ArticuloController::class, 'update']);
+Route::delete('/articulos/{id}', [ArticuloController::class, 'destroy']);
 
