@@ -15,6 +15,7 @@ class Articulo extends Model
         'name',
         'stock',
         'discount',
-        'photo'
+        'photo',
+        'description'
     ];
 }

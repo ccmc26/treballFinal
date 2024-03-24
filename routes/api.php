@@ -24,3 +24,4 @@ Route::get('/articulos', [ArticuloController::class, 'index']);
 Route::get('/articulos/create', [ArticuloController::class, 'create']);
 Route::post('/articulos', [ArticuloController::class, 'store']);
 
+

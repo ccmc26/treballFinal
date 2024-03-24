@@ -30,6 +30,7 @@ class ArticuloController extends Controller
             'stock' => 'required|integer|min:0',
             'discount' => 'required|integer|min:0|max:1',
             'photo' => 'required|url',
+            'description' => 'required|max:2555'
         ]);
 
         $articulo = Articulo::create($validatedData);
@@ -50,7 +51,8 @@ class ArticuloController extends Controller
             'name' => 'required',
             'stock' => 'required',
             'discount' => 'required',
-            'photo' => 'required'
+            'photo' => 'required',
+            'description' => 'required'
         ]);
         $articulo = Articulo::create($validated);
 

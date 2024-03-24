@@ -17,6 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('stock');
             $table->tinyInteger('discount');
             $table->string('photo');
+            $table->string('description');
             $table->timestamps();
         });
     }
