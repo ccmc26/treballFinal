@@ -15,3 +15,7 @@ Este repositorio contiene su código, el qual esta puesto con la intencion de de
 
 ## SOBRE RAMA DE DEVELOP
 La rama develop de este repositorio contiene el trabajo en proceso para la siguiente "version".
+
+
+## INSTALACION 
+Para poder tener el entorno de desarollo ejecutandose 
