@@ -50,12 +50,25 @@ const logout = () => {
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                                    Sobre nosotros
+                                    Sobre mí
                                 </NavLink>
 
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Productos
                                 </NavLink>
+
+                                <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                                    Encargos
+                                </NavLink>
+
+                                <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                                    Entorno
+                                </NavLink>
+
+                                <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                                    UP
+                                </NavLink>
+
                                 <!-- otra vista a configurar-->
                                 <!-- <NavLink :href="route('uslang.create')" :active="route().current('uslang.create')">
                                     Inscripcion

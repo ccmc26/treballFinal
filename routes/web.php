@@ -38,7 +38,7 @@ Route::middleware([
 });
 
 Route::get('/articulos', function(){
-    return Inertia::render('ListadoArticulos', ['articulos' => Articulo::get()]);
+    return Inertia::render('ListadoArticulo', ['articulos' => Articulo::get()]);
 });
 
 
