@@ -39,7 +39,7 @@ Route::middleware([
 
 Route::get('/articulos', function(){
     return Inertia::render('ListadoArticulo', ['articulos' => Articulo::get()]);
-});
+})->name('productos');
 
 
 

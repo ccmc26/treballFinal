@@ -14,7 +14,7 @@ class ArticuloControllerViewer extends Controller
     public function index()
     {
         $articulos = Articulo::all();
-        return Inertia::render('ListadoArticulos', ['articulos' => $articulos]);
+        return Inertia::render('ListadoArticulo', ['articulos' => $articulos]);
     }
 
     /**

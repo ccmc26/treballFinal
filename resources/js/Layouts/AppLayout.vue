@@ -53,7 +53,7 @@ const logout = () => {
                                     Sobre mí
                                 </NavLink>
 
-                                <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                                <NavLink :href="route('productos')" :active="route().current('productos')">
                                     Productos
                                 </NavLink>
 
@@ -67,6 +67,10 @@ const logout = () => {
 
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     UP
+                                </NavLink>
+
+                                <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                                    Comentarios
                                 </NavLink>
 
                                 <!-- otra vista a configurar-->
