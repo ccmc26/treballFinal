@@ -16,8 +16,14 @@ class ArticuloFactory extends Factory
      */
     public function definition(): array
     {
+        $opciones = ['bolso', 'top', 'pulsera', 'letra'];
         return [
-            //
+            'name' => $this->faker->randomElement($opciones),
+            'stock' => $this->faker->numberBetween(0, 10),
+            'discount' => $this->faker->numberBetween(0, 1),
+            'photo' => $this->faker->url,
+            'description' => $this->faker->text()
         ];
+
     }
 }

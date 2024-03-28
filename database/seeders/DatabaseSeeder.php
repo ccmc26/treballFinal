@@ -21,7 +21,8 @@ class DatabaseSeeder extends Seeder
             'password'=> $hashedPassword
         ]);
         $this->call([
-            UserSeeder::class
+            UserSeeder::class,
+            ArticuloSeeder::class
         ]);
     }
 }
