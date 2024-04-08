@@ -20,6 +20,14 @@ class DatabaseSeeder extends Seeder
             'email'=> 'admin@gmail.com',
             'password'=> $hashedPassword
         ]);
+
+        $password2 = 'user';
+        $hashedPassword2 = Hash::make("$password2");
+        \App\Models\User::factory()->create([
+            'name' => 'user',
+            'email' => 'user@gmail.com',
+            'password' => $hashedPassword2
+        ]);
         $this->call([
             UserSeeder::class,
             ArticuloSeeder::class
