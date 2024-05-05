@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticuloController;
 use App\Http\Controllers\LanguageViewController;
 use App\Http\Controllers\User_LanguageViewController;
 use App\Models\Articulo;
@@ -40,6 +41,10 @@ Route::middleware([
 Route::get('/articulos', function(){
     return Inertia::render('ListadoArticulo', ['articulos' => Articulo::get()]);
 })->name('productos');
+
+Route::post('/articulos', function(){
+    return Inertia::render('FormularioArticulo');
+})->name('subir');
 
 
 

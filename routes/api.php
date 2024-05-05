@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\RegistroController;
 use App\Http\Controllers\ArticuloController;
-
+use App\Http\Controllers\ComentarioController;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
@@ -28,3 +28,10 @@ Route::get('/articulos/{id}/edit', [ArticuloController::class, 'edit']);
 Route::put('/articulos/{id}', [ArticuloController::class, 'update']);
 Route::delete('/articulos/{id}', [ArticuloController::class, 'destroy']);
 
+Route::get('/comentarios', [ComentarioController::class, 'index']);
+Route::get('/comentarios/create', [ComentarioController::class, 'create']);
+Route::post('/comentarios', [ComentarioController::class, 'store']);
+Route::get('/comentarios/{id}', [ComentarioController::class, 'show']);
+Route::get('/comentarios/{id}/edit', [ComentarioController::class, 'edit']);
+Route::put('/comentarios/{id}', [ComentarioController::class, 'update']);
+Route::delete('/comentarios/{id}', [ComentarioController::class, 'destroy']);

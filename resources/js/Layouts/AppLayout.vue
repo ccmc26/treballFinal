@@ -65,7 +65,7 @@ const logout = () => {
                                     Entorno
                                 </NavLink>
 
-                                <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                                <NavLink :href="route('subir')" :active="route().current('subir')">
                                     UP
                                 </NavLink>
 

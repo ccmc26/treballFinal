@@ -30,7 +30,17 @@ class ArticuloControllerViewer extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required',
+            'stock' => 'required',
+            'discount' => 'required',
+            'photo' => 'required',
+            'description' => 'required'
+        ]);
+        Articulo::create($validated);
+
+        $articulos = Articulo::all();
+        return Inertia::render('ListadoArticulo', ['articulos' => $articulos]);
     }
 
     /**

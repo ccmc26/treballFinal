@@ -109,7 +109,7 @@ class ArticuloController extends Controller
                 'articulo' => $articulo
             ]);
         }else{
-            return response('No se ha encontrado el usuario');
+            return response('No se ha encontrado el articulo');
         }
     }
 
@@ -126,7 +126,7 @@ class ArticuloController extends Controller
                 'articulo' => $articulo
             ]);
         }else{
-            return response('No se ha encontrado el usuario');
+            return response('No se ha encontrado el articulo');
         }
     }
 }
