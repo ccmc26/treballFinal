@@ -65,12 +65,12 @@ const logout = () => {
                                     Entorno
                                 </NavLink>
 
-                                <NavLink :href="route('subir')" :active="route().current('subir')">
-                                    UP
-                                </NavLink>
-
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Comentarios
+                                </NavLink>
+
+                                <NavLink :href="route('subir')" :active="route().current('subir')">
+                                    UP
                                 </NavLink>
 
                                 <!-- otra vista a configurar-->

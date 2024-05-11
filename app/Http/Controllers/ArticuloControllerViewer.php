@@ -40,7 +40,7 @@ class ArticuloControllerViewer extends Controller
         Articulo::create($validated);
 
         $articulos = Articulo::all();
-        return Inertia::render('ListadoArticulo', ['articulos' => $articulos]);
+        // return Inertia::render('ListadoArticulo', ['articulos' => $articulos]);
     }
 
     /**
