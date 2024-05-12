@@ -22,7 +22,7 @@ return new class extends Migration
             $table->integer('photo_size')->nullable();
             $table->longText('description')->nullable();
             $table->decimal('price', 10, 2);
-            $table->timestamps();
+            // $table->timestamps();
 
             $table->foreignIdFor(User::class, 'created_by')->nullable();
             $table->foreignIdFor(User::class, 'updated_by')->nullable();

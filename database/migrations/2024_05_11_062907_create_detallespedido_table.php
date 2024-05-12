@@ -14,6 +14,14 @@ return new class extends Migration
         Schema::create('detallespedido', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('name');
+            $table->string('surname');
+            $table->string('phone')->nullable();
+            $table->string('adress');
+            $table->string('city');
+            $table->string('provincia');
+            $table->string('zipcode');
+            $table->string('country_code');
         });
     }
 

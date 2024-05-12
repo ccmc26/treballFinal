@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('itemdelpedido', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('order_id')->references('id')->on('pedido');
+            $table->foreignId('product_id')->references('id')->on('articulo');
+            $table->integer('quantity');
+            $table->decimal('unit_price');
             $table->timestamps();
         });
     }

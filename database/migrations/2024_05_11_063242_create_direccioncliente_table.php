@@ -13,7 +13,15 @@ return new class extends Migration
     {
         Schema::create('direccioncliente', function (Blueprint $table) {
             $table->id();
+            $table->string('type');
+            $table->string('adress');
+            $table->string('city');
+            $table->string('provincia');
+            $table->string('zipcode');
+            $table->string('country_code');
+            $table->foreignId('customer_id')->references('id')->on('cliente');
             $table->timestamps();
+            $table->foreign('country_code')->references('code')->on('pais');
         });
     }
 

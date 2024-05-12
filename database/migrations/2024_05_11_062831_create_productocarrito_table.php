@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -14,6 +15,9 @@ return new class extends Migration
         Schema::create('productocarrito', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->foreignId('product_id')->references('id')->on('articulo');
+            $table->foreignIdFor(User::class, 'user_id');
+            $table->integer('quantity');
         });
     }
 
