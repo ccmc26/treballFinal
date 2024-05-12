@@ -19,6 +19,7 @@
         "vue": "^3.2.31"
     },
     "dependencies": {
-        "bootstrap": "^5.3.3"
+        "bootstrap": "^5.3.3",
+        "vuex": "^4.0.2"
     }
 }
