@@ -4,12 +4,13 @@
     <div class="flex items-center min-h-screen bg-white dark:bg-gray-900">
         <div class="container mx-auto">
             <div class="max-w-md mx-auto my-10">
+                <GuestLayout title="Sign in">
                 <div class="text-center">
-                    <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">Sign in</h1>
+                    <!-- <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">Sign in</h1> -->
                     <p class="text-gray-500 dark:text-gray-400">Sign in to access your account</p>
                 </div>
                 <div class="m-7">
-                    <form action="">
+                    <form class="space-y-6" action="#" method="POST">
                         <div class="mb-6">
                             <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
                             <input type="email" name="email" id="email" placeholder="you@company.com" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
@@ -30,6 +31,7 @@
                         <p class="text-sm text-center text-gray-400">Don&#x27;t have an account yet? <a href="#!" class="text-indigo-400 focus:outline-none focus:underline focus:text-indigo-500 dark:focus:border-indigo-800">Sign up</a>.</p>
                     </form>
                 </div>
+            </GuestLayout>
             </div>
         </div>
     </div>
@@ -37,10 +39,11 @@
 
 </template>
 
-<script >
-    export default{
-        name: "Login"
-    }
+<script setup>
+import GuestLayout from '../components/GuestLayout.vue';
+
+
 </script>
 <style scoped>
+
 </style>
