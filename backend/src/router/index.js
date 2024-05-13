@@ -2,6 +2,9 @@ import ResetPassword from "../views/ResetPassword.vue";
 import Dashboard from "../views/Dashboard.vue"
 import Login from "../views/Login.vue"
 import RequestPassword from "../views/RequestPassword.vue";
+import AppLayout from "../components/AppLayout.vue";
+import NotFound from '../views/NotFound.vue';
+import store from '../store'
 import {createRouter, createWebHistory} from "vue-router";
 
 
@@ -48,7 +51,7 @@ const routes = [
         },
         {
             path: '/:pathMatch(.*)',
-            name: notfound,
+            name: 'notfound',
             component: NotFound
         }
 

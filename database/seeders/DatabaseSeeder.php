@@ -13,14 +13,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $password = 'admin';
-        $hashedPassword = Hash::make("$password");
-        \App\Models\User::factory()->create([
-            'name'=> 'admin',
-            'email'=> 'admin@gmail.com',
-            'password'=> $hashedPassword
-        ]);
-
         $password2 = 'user';
         $hashedPassword2 = Hash::make("$password2");
         \App\Models\User::factory()->create([
@@ -30,7 +22,7 @@ class DatabaseSeeder extends Seeder
         ]);
         $this->call([
             UserSeeder::class,
-            ArticuloSeeder::class
+            // ArticuloSeeder::class
         ]);
     }
 }
