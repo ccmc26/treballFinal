@@ -30,27 +30,27 @@
   const {title} = defineProps({
     title: String
   })
-  const sidebarOpened = ref(true);
-  const currentUser = computed(() => store.state.user.data);
+//   const sidebarOpened = ref(true);
+//   const currentUser = computed(() => store.state.user.data);
 
-  function toggleSidebar() {
-    sidebarOpened.value = !sidebarOpened.value
-  }
+//   function toggleSidebar() {
+//     sidebarOpened.value = !sidebarOpened.value
+//   }
 
-  function updateSidebarState() {
-    sidebarOpened.value = window.outerWidth > 768;
-  }
+//   function updateSidebarState() {
+//     sidebarOpened.value = window.outerWidth > 768;
+//   }
 
-  onMounted(() => {
-    store.dispatch('getCurrentUser')
-    store.dispatch('getCountries')
-    updateSidebarState();
-    window.addEventListener('resize', updateSidebarState)
-  })
+//   onMounted(() => {
+//     store.dispatch('getCurrentUser')
+//     store.dispatch('getCountries')
+//     updateSidebarState();
+//     window.addEventListener('resize', updateSidebarState)
+//   })
 
-  onUnmounted(() => {
-    window.removeEventListener('resize', updateSidebarState)
-  })
+//   onUnmounted(() => {
+//     window.removeEventListener('resize', updateSidebarState)
+//   })
 
   </script>
 
