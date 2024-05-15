@@ -79,6 +79,7 @@
   function logout() {
     store.dispatch('logout')
       .then(() => {
+        // debugger;
         router.push({name: 'login'})
       })
   }

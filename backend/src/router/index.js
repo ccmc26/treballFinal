@@ -29,6 +29,11 @@ const routes = [
                     name: 'app.products',
                     component: Products
                 },
+                {
+                    path: 'categories',
+                    name: 'app.categories',
+                    component: Categories
+                }
             ]
         },
         {
