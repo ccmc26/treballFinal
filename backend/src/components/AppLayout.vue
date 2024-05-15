@@ -1,9 +1,6 @@
 <template>
     <div v-if="currentUser.id" class="min-h-full bg-gray-200 flex">
-      <!--    Sidebar-->
       <Sidebar :class="{'-ml-[200px]': !sidebarOpened}"/>
-      <!--/    Sidebar-->
-
       <div class="flex-1">
         <Navbar @toggle-sidebar="toggleSidebar"></Navbar>
         <!--      Content-->
@@ -30,27 +27,28 @@
   const {title} = defineProps({
     title: String
   })
-//   const sidebarOpened = ref(true);
-//   const currentUser = computed(() => store.state.user.data);
 
-//   function toggleSidebar() {
-//     sidebarOpened.value = !sidebarOpened.value
-//   }
+  const sidebarOpened = ref(true);
+  const currentUser = computed(() => store.state.user.data);
 
-//   function updateSidebarState() {
-//     sidebarOpened.value = window.outerWidth > 768;
-//   }
+  function toggleSidebar() {
+    sidebarOpened.value = !sidebarOpened.value
+  }
 
-//   onMounted(() => {
-//     store.dispatch('getCurrentUser')
-//     store.dispatch('getCountries')
-//     updateSidebarState();
-//     window.addEventListener('resize', updateSidebarState)
-//   })
+  function updateSidebarState() {
+    sidebarOpened.value = window.outerWidth > 768;
+  }
 
-//   onUnmounted(() => {
-//     window.removeEventListener('resize', updateSidebarState)
-//   })
+  onMounted(() => {
+    store.dispatch('getCurrentUser')
+    store.dispatch('getCountries')
+    updateSidebarState();
+    window.addEventListener('resize', updateSidebarState)
+  })
+
+  onUnmounted(() => {
+    window.removeEventListener('resize', updateSidebarState)
+  })
 
   </script>
 
