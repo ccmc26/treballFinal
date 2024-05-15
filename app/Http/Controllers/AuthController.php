@@ -34,7 +34,11 @@ class AuthController extends Controller{
         ]);
     }
 
+    //obtenim l'usuari autenticat, accedim al seu token i el
     public function logout(){
+        $user = Auth::user();
+        $user->currentAccessToken()->delete();
 
+        return response('');
     }
 }

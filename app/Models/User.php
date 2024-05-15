@@ -5,6 +5,8 @@ namespace App\Models;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Laravel\Sanctum\HasApiTokens;
+
 // use Illuminate\Notifications\Notifiable;
 // use Laravel\Fortify\TwoFactorAuthenticatable;
 // use Laravel\Jetstream\HasProfilePhoto;
@@ -13,7 +15,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     // use HasApiTokens;
-    use HasFactory;
+    use HasFactory, HasApiTokens;
 
     protected $table = 'users';
     protected $primaryKey = 'id';
