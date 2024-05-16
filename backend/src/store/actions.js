@@ -1,5 +1,4 @@
 import axiosClient from "../axios";
-import { setUser } from "./mutations";
 
 export function getUser({commit}){
     return axiosClient.get('/user', data)

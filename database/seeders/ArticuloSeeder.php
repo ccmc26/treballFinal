@@ -14,7 +14,7 @@ class ArticuloSeeder extends Seeder
     public function run(): void
     {
         Articulo::factory()
-            ->count(5)
+            ->count(8)
             ->create();
     }
 }

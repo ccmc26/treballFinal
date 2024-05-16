@@ -13,16 +13,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $password2 = 'user';
-        $hashedPassword2 = Hash::make("$password2");
-        \App\Models\User::factory()->create([
-            'name' => 'user',
-            'email' => 'user@gmail.com',
-            'password' => $hashedPassword2
-        ]);
+        // $password2 = 'user';
+        // $hashedPassword2 = Hash::make("$password2");
+        // \App\Models\User::factory()->create([
+        //     'name' => 'user',
+        //     'email' => 'user@gmail.com',
+        //     'password' => $hashedPassword2
+        // ]);
         $this->call([
+            AdminSeeder::class,
             UserSeeder::class,
-            // ArticuloSeeder::class
+            ArticuloSeeder::class
         ]);
     }
 }

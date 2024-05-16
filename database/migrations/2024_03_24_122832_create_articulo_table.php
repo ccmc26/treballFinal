@@ -15,8 +15,9 @@ return new class extends Migration
         Schema::create('articulo', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->unsignedBigInteger('stock');
-            $table->tinyInteger('discount');
+            $table->string('slug');
+            // $table->unsignedBigInteger('stock')->nullabel();
+            // $table->tinyInteger('discount')->nullable();
             $table->string('photo')->nullable();
             $table->string('photo_mime')->nullable();
             $table->integer('photo_size')->nullable();
